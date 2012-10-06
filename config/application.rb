@@ -68,5 +68,7 @@ module Wilfulwallflower
     config.to_prepare do
       Refinery.searchable_models = [Refinery::Page, Refinery::Blog]
     end
+
+    config.assets.initialize_on_precompile = true
   end
 end
